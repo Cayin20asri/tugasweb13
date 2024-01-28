@@ -1,0 +1,77 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<body background="css/3.PNG">
+<img src="css/1.JPG" style=" width: 1230px; height: 150px;">
+
+<div class="w3-container">
+     <center>
+	  <h1 style="color:#FF4500;">BIOSKOP MOVIES</h1>
+</div>
+
+<div class="w3-bar w3-black w3-card-4">
+<button class="w3-bar-item w3-button" onclick="openKota('Aquaman')">Aquaman</button>
+<button class="w3-bar-item w3-button" onclick="openKota('The Maze Runner')">The Maze Runner</button>
+<button class="w3-bar-item w3-button" onclick="openKota('Black Widow')">Black Widow</button>
+<button class="w3-bar-item w3-button" onclick="openKota('13 Bom Di Jakarta')">13 Bom Di Jakarta</button>
+<button class="w3-bar-item w3-button" onclick="openKota('Damsel')">Damsel</button>
+<button class="w3-bar-item w3-button" onclick="openKota('Thor')">Thor</button>
+<button class="w3-bar-item w3-button" onclick="openKota('Transformers')">Transformers</button>
+<div class="w3-dropdown-hover">
+    <button class="w3-button">Data Diri</button>
+	<div class="w3-dropdown-content w3-bar-block w3-card-4">
+	  <button class="w3-bar-item w3-button" onclick="openKota('Data Diri')">Data Diri</button>
+	</div>
+</div>
+
+<div id="Data Diri" class="w3-container kota w3-animate-top" style="display:none">
+ <h2>Nma : Asri Nurfadilah Azzahra
+ <br>
+ NIM : 10123099
+ <br>
+ Kelas : IF-2</h2>
+ <hr>
+ <img src="css/me3.JPG" style="width:20%">
+</div>
+
+<div id="Aquaman" class="w3-container kota" style="display:none">
+<img src="css/aqua.WEBP" style="width:20%">
+ <h2>Aquaman</h2>
+</div>
+<div id="The Maze Runner" class="w3-container kota" style="display:none">
+<img src="css/maze.WEBP" style="width:20%">
+ <h2>The Maze Runner</h2>
+</div>
+<div id="Black Widow" class="w3-container kota" style="display:none">
+<img src="css/black.JPG" style="width:20%">
+ <h2>Black Widow</h2>
+</div>
+<div id="13 Bom Di Jakarta" class="w3-container kota" style="display:none">
+<img src="css/bom.JPEG" style="width:20%">
+ <h2>13 Bom Di Jakarta</h2>
+</div>
+<div id="Damsel" class="w3-container kota" style="display:none">
+<img src="css/damsel.JPEG" style="width:20%">
+ <h2>Damsel</h2>
+</div>
+<div id="Thor" class="w3-container kota" style="display:none">
+<img src="css/thor.JPEG" style="width:20%">
+ <h2>Thor</h2>
+</div>
+<div id="Transformers" class="w3-container kota" style="display:none">
+<img src="css/transformer.JPG" style="width:20%">
+ <h2>Transformers</h2>
+</div>
+
+
+
+
+<script>
+function openKota(namaKota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namaKota).style.display = "block"; 
+}
+</script>
